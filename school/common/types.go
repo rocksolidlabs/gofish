@@ -16,9 +16,9 @@ const DefaultServiceRoot = "/redfish/v1/"
 type Client interface {
 	Get(url string) (*http.Response, error)
 	Post(url string, payload []byte) (*http.Response, error)
-	// Patch()
-	// Put()
-	Delete(url string) error
+	Patch(url string, payload []byte) (*http.Response, error)
+	Put(url string, payload []byte) (*http.Response, error)
+	Delete(url string) (*http.Response, error)
 }
 
 // Entity provides the common basis for all Redfish and Swordfish objects.

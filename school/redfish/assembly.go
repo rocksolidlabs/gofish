@@ -7,7 +7,7 @@ package redfish
 import (
 	"encoding/json"
 
-	"github.com/stmcginnis/gofish/school/common"
+	"github.com/rocksolidlabs/gofish/school/common"
 )
 
 // Assembly is used to represent an assembly information resource for a

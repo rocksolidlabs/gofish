@@ -7,7 +7,7 @@ package redfish
 import (
 	"encoding/json"
 
-	"github.com/stmcginnis/gofish/school/common"
+	"github.com/rocksolidlabs/gofish/school/common"
 )
 
 // Bios is used to represent BIOS attributes.
@@ -28,7 +28,7 @@ type Bios struct {
 	AttributeRegistry string
 	// Attributes are additional properties in this object, and can be looked up
 	// in the Attribute Registry by their AttributeName.
-	// Attributes string
+	Attributes map[string]interface{}
 	// Description provides a description of this resource.
 	Description string
 }

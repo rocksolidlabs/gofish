@@ -7,8 +7,8 @@ package swordfish
 import (
 	"encoding/json"
 
-	"github.com/stmcginnis/gofish/school/common"
-	"github.com/stmcginnis/gofish/school/redfish"
+	"github.com/rocksolidlabs/gofish/school/common"
+	"github.com/rocksolidlabs/gofish/school/redfish"
 )
 
 // QuotaType shall indicate whether quotas are enabled and enforced by this file

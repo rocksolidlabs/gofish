@@ -9,7 +9,7 @@ import (
 	"crypto/tls"
 	"net/http"
 
-	gofish "github.com/stmcginnis/gofish/school"
+	gofish "github.com/rocksolidlabs/gofish/school"
 )
 
 func httpclientForSelfSigned() (client *http.Client, err error) {

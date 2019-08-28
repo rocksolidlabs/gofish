@@ -7,7 +7,7 @@ package redfish
 import (
 	"encoding/json"
 
-	"github.com/stmcginnis/gofish/school/common"
+	"github.com/rocksolidlabs/gofish/school/common"
 )
 
 // SessionTypes is the type of session.
@@ -104,7 +104,8 @@ func CreateSession(c common.Client, uri string, username string, password string
 
 // DeleteSession deletes a session using the location as argument
 func DeleteSession(c common.Client, url string) (err error) {
-	return c.Delete(url)
+	_, err = c.Delete(url)
+	return
 }
 
 // GetSession will get a Session instance from the Redfish service.

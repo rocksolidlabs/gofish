@@ -5,7 +5,7 @@ import (
 	"os"
 	s "strings"
 
-	gofish "github.com/stmcginnis/gofish/school"
+	gofish "github.com/rocksolidlabs/gofish/school"
 )
 
 func main() {
